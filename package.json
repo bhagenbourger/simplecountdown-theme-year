@@ -1,0 +1,37 @@
+{
+  "name": "simplecountdown-theme-year",
+  "version": "0.0.0",
+  "description": "Happy new year theme for simple countdown",
+  "dependencies": {
+    "simplecountdown": ">=2.0.0"
+  },
+  "devDependencies": {
+    "uglifyjs": "latest"
+  },
+  "scripts": {
+    "postversion": "git checkout -b $npm_package_version && git push origin $npm_package_version",
+    "clean": "rm dist/*",
+    "build": "cp simplecountdown-theme-year.js dist/$npm_package_name-$npm_package_version.js && uglifyjs simplecountdown-theme-year.js > dist/$npm_package_name-$npm_package_version.min.js",
+    "prepublish": "npm run clean && npm run build && git add . && git commit -a -m 'Release '$npm_package_version && git push --set-upstream origin $npm_package_version",
+    "postpublish": "git checkout master && git merge $npm_package_version && git push"
+  },
+  "main": "simplecountdown-theme-year.js",
+  "directories": {
+    "example": "examples",
+    "dist": "release"
+  },
+  "author": {
+    "name": "Benoît HAGENBOURGER",
+    "url": "http://benoit.hagenbourger.fr"
+  },
+  "contributors": [
+    {
+      "name": "Thibault HAGENBOURGER"
+    }
+  ],
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bhagenbourger/simplecountdown-theme-year.git"
+  }
+}
