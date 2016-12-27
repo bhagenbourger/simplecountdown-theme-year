@@ -1,6 +1,6 @@
 {
   "name": "simplecountdown-theme-year",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Happy new year theme for simple countdown",
   "dependencies": {
     "simplecountdown": ">=2.0.0"
