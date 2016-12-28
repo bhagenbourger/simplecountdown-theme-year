@@ -185,8 +185,8 @@ SimpleCountdown.addTheme(
        div.style['border-radius'] = "50%";
        div.style.opacity = 0;
        //- positions
-       div.style.left = Math.floor(window.screen.width / 2) + 1 + "px";
-       div.style.top = "100%";
+       div.style.left = Math.floor((window.screen.width - 50) / 2) + "px";
+       div.style.top = "90%";
        return div;
      }
 
