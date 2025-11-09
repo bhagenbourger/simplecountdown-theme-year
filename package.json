@@ -1,9 +1,9 @@
 {
   "name": "simplecountdown-theme-year",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Happy new year theme for simple countdown",
   "dependencies": {
-    "simplecountdown": ">=2.0.0"
+    "simplecountdown": ">=3.1.0"
   },
   "devDependencies": {
     "uglifyjs": "latest"
@@ -12,8 +12,8 @@
     "postversion": "git checkout -b $npm_package_version && git push origin $npm_package_version",
     "clean": "rm dist/*",
     "build": "cp simplecountdown-theme-year.js dist/$npm_package_name-$npm_package_version.js && uglifyjs simplecountdown-theme-year.js > dist/$npm_package_name-$npm_package_version.min.js",
-    "prepublish": "npm run clean && npm run build && git add . && git commit -a -m 'Release '$npm_package_version && git push --set-upstream origin $npm_package_version",
-    "postpublish": "git checkout master && git merge $npm_package_version && git push"
+    "prepublish": "npm run clean && npm run build && git switch -c $npm_package_version && git add . && git commit -a -m 'Release '$npm_package_version && git push origin $npm_package_version",
+    "postpublish": "git tag $npm_package_version && git push origin --tags"
   },
   "main": "simplecountdown-theme-year.js",
   "directories": {
