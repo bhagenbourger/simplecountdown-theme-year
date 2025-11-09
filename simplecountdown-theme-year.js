@@ -32,17 +32,32 @@ SimpleCountdown.addTheme(
           "}" +
 
           // - Select first brick
+          ".sc-brick:nth-child(1){" +
+            "border: 2px solid #ffffff;" +
+            "box-shadow: 1px 0.5px rgba(255,255,255,0.8);" +
+          "}" +
+
+          ".sc-brick:nth-child(1) .number{" +
+            "color: rgba(255,255,255,0.8);" +
+          "}" +
+
+          ".sc-brick:nth-child(1) .legend{" +
+            "color: #1B5E20;" +
+            "text-shadow: 0.3px 0.2px rgba(255,255,255,0.8);" +
+          "}" +
+
           ".sc-brick:nth-child(2){" +
             "border: 2px solid #ffffff;" +
             "box-shadow: 1px 0.5px rgba(255,255,255,0.8);" +
           "}" +
 
           ".sc-brick:nth-child(2) .number{" +
-            "color: rgba(255,255,255,0.8);" +
+            "color: rgba(255,255,255,0.9);" +
+            "text-shadow: 0.3px 0.2px rgba(255,255,255,0.8);" +
           "}" +
 
           ".sc-brick:nth-child(2) .legend{" +
-            "color: #1B5E20;" +
+            "color: #2E7D32;" +
             "text-shadow: 0.3px 0.2px rgba(255,255,255,0.8);" +
           "}" +
 
@@ -51,13 +66,13 @@ SimpleCountdown.addTheme(
             "box-shadow: 1px 0.5px rgba(255,255,255,0.8);" +
           "}" +
 
-          ".sc-brick:nth-child(3) .number{" +
-            "color: rgba(255,255,255,0.9);" +
+          ".sc-brick:nth-child(3) .legend{" +
+            "color: #388E3C;" +
             "text-shadow: 0.3px 0.2px rgba(255,255,255,0.8);" +
           "}" +
 
-          ".sc-brick:nth-child(3) .legend{" +
-            "color: #2E7D32;" +
+          ".sc-brick:nth-child(3) .number{" +
+            "color: rgba(255,255,255,1);" +
             "text-shadow: 0.3px 0.2px rgba(255,255,255,0.8);" +
           "}" +
 
@@ -66,22 +81,7 @@ SimpleCountdown.addTheme(
             "box-shadow: 1px 0.5px rgba(255,255,255,0.8);" +
           "}" +
 
-          ".sc-brick:nth-child(4) .legend{" +
-            "color: #388E3C;" +
-            "text-shadow: 0.3px 0.2px rgba(255,255,255,0.8);" +
-          "}" +
-
           ".sc-brick:nth-child(4) .number{" +
-            "color: rgba(255,255,255,1);" +
-            "text-shadow: 0.3px 0.2px rgba(255,255,255,0.8);" +
-          "}" +
-
-          ".sc-brick:nth-child(5){" +
-            "border: 2px solid #ffffff;" +
-            "box-shadow: 1px 0.5px rgba(255,255,255,0.8);" +
-          "}" +
-
-          ".sc-brick:nth-child(5) .number{" +
             "color: #FFD740;" +
             "text-shadow: 0.3px 0.2px rgba(255,255,255,0.8);" +
           "}",
